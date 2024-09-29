@@ -1,5 +1,5 @@
 // Fecha objetivo para el contador (puedes ajustar esta fecha)
-var countDownDate = new Date("Dec 07, 2024 14:00:00").getTime();
+var countDownDate = new Date("Dec 07, 2024 15:00:00").getTime();
 
 // Actualiza el contador cada segundo
 var x = setInterval(function() {
@@ -16,8 +16,8 @@ var x = setInterval(function() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Muestra el resultado en el contenedor con id="countdown"
-    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
+    document.getElementById("countdown").innerHTML = days + " dias, " + hours + " horas, "
+    + minutes + " minutos, " + seconds + " segundos";
 
     // Si el contador llega a cero, muestra un mensaje
     if (distance < 0) {
