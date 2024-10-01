@@ -1717,9 +1717,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   }
 }
 @media only screen and (max-width: 600px) {
-  #home {
+  /* #home {
     min-height: 702px;
-  }
+  } */
 
   .home-content-tablecell .row {
     max-width: 480px;
@@ -1754,9 +1754,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   }
 }
 @media only screen and (max-width: 400px) {
-  #home {
+  /* #home {
     min-height: 654px;
-  }
+  } */
 
   .home-content-tablecell .row {
     padding-top: 4.8rem;
