@@ -1515,7 +1515,6 @@ header .header-logo a {
   -moz-background-size: cover;
   background-size: cover;
   background-position: center 30%;
-  background-attachment: fixed;
 }
 #home .overlay {
   position: absolute;
@@ -1755,9 +1754,6 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   /* #home {
     min-height: 654px;
   } */
-  #home {
-    background-attachment: scroll;
-  }
   .home-content-tablecell .row {
     padding-top: 4.8rem;
     padding-bottom: 10.8rem;
@@ -2607,6 +2603,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   #testimonial-slider p {
     font-size: 2.8rem;
   }
+  #testimonials p {
+    font-size: 1.7rem;
+  }
 }
 @media only screen and (max-width: 768px) {
   #testimonials h2 {
@@ -2634,6 +2633,15 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 
   #testimonial-slider p {
     font-size: 2.2rem;
+  }
+  #hashtag h3 {
+    font-size: 1.7rem;
+  }
+  #hashtag p {
+    font-size: 1.7remm;
+  }
+  #hashtag h1 {
+    font-size: 3.4rem;
   }
 }
 @media only screen and (max-width: 500px) {
