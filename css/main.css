@@ -1755,7 +1755,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   /* #home {
     min-height: 654px;
   } */
-
+  #home {
+    background-attachment: scroll;
+  }
   .home-content-tablecell .row {
     padding-top: 4.8rem;
     padding-bottom: 10.8rem;
@@ -2437,6 +2439,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  * ------------------------------------------------------------------- */
  #testimonials .colorcontent {
   display: inline-block;
+  margin: 0 2rem 2rem 0;
  }
  #testimonials .color {
   width: 8rem;
@@ -2504,9 +2507,14 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 /* #testimonial-slider .testimonial-author {
   margin-top: 4.2rem;
 } */
-#testimonial-slider .testimonial-author img {
+#testimonials img {
   width: 15rem;
   height: 15rem;
+}
+#testimonials p {
+  font-family: "montserrat-regular", sans-serif;
+  font-size: 2rem;
+  line-height: 1.833;
 }
 #testimonial-slider .testimonial-author .author-info {
   vertical-align: middle;
@@ -2559,7 +2567,38 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 #testimonials .flex-control-paging li a.flex-active {
   background-color: #000000;
 }
-
+#hashtag {
+  padding: 12rem 0 7.8rem;
+  text-align: center;
+  background: #e9eaea;
+}
+#hashtag h3 {
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 1.8 rem;
+  line-height: 1.667;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  margin-bottom: 1.2rem;
+}
+#hashtag p {
+  font-family: "montserrat-regular", sans-serif;
+  font-size: 2rem;
+  line-height: 1.8;
+  color: #4f4f4f;
+  margin-bottom: 3.6rem;
+}
+#hashtag h1 {
+  font-family: "librebaskerville-bold", serif;
+  font-size: 4.8rem;
+  line-height: 1.375;
+  color: #9A5051;
+}
+#hashtag a {
+  color: #9A5051;
+}
+#hashtag a:hover{
+  color: #6c3132;
+}
 /* ------------------------------------------------------------------- 
  * responsive:
  * testimonials
@@ -2838,7 +2877,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   margin-top: .6rem;
 }
 #contact button.submitform:hover, #contact button.submitform:focus {
-  background: #f89e0f;
+  background: #6c3132;
 }
 
 #message-warning, #message-success {
@@ -3065,7 +3104,7 @@ footer h4.h05::after {
   top: 0;
 }
 .footer-main #mc-form button:hover {
-  background-color: #f89e0f;
+  background-color: #6c3132;
 }
 .footer-main #mc-form button i {
   font-size: 2.6rem;
