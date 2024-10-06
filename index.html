@@ -109,6 +109,11 @@
 							Andrea y Gabriel
 				  			</h1>
 							<h3 class="animate-intro">07 de Diciembre de 2024</h3>
+							
+							<audio controls>
+								<source src="music/boda.mp3" type="audio/mpeg">
+								Tu navegador no soporta la etiqueta de audio.
+							</audio>
 
 				  			<div class="more animate-intro">
 				  				<a class="smoothscroll button stroke" href="#about">
@@ -374,7 +379,7 @@
 
 				<div class="intro">
 				<h3 class="animate-this">Mesa de regalos</h3>
-				<p>Lo más importante para nosotros es compartir ese día con ustedes, pero si desean darnos un obsequio aquí podrán encontrar nuestras sugerencias</p>
+				<p class="animate-this">Lo más importante para nosotros es compartir ese día con ustedes, pero si desean darnos un obsequio aquí podrán encontrar nuestras sugerencias</p>
 				<img src="images/places/liverpool.webp" loading="lazy" alt="Liverpool">
 	   			<p class="lead animate-this">Liverpool</p>
 				<p>Número de evento: 51503576</p>
@@ -554,76 +559,53 @@
    <!-- vestimenta
    ================================================== -->
    <section id="testimonials">
+		<div class="row about-wrap">
+			<h2 class="animate-this">Código de vestimenta</h2>
+			<h3>Formal</h3>
+			<img src="images/avatars/formal.png" alt="dresscode">
+			<p class="animate-this">Te pedimos, con mucho cariño, evitar vestir en los siguientes tonos:</p>
 
-   	<div class="row">
-   		<div class="col-twelve">
-   			<h2 class="animate-this">Código de vestimenta</h2>
-   		</div>   		
-   	</div>   	
-
-      <div class="row flex-container">
-    
-         <div id="testimonial-slider" class="flex-slider animate-this">
-
-            <ul class="slides">
-
-               <li>
-                  <h3>Formal</h3>
-                  <div class="testimonial-author">
-                    	<img src="images/avatars/formal.png" alt="dresscode">
-                    	<div class="author-info">
-							<p>Como parte de la atmósfera que estamos creando,</p>
-							<p>te pedimos, con mucho cariño, evitar vestir en los siguientes tonos:</p>
-							<div class="colorcontent">
-								<div class="color" id="blanco"></div>
-								<span class="position">Blanco</span>
-							</div>
-							<div class="colorcontent">
-								<div class="color" id="beige"></div>
-								<span class="position">Beige</span>
-							</div>
-							<div class="colorcontent">
-								<div class="color" id="cuarzo"></div>
-								<span class="position">Cuarzo</span>
-							</div>
-							<div class="colorcontent">
-								<div class="color" id="chianti"></div>
-								<span class="position">Chianti</span>
-							</div>
-							<div class="colorcontent">
-								<div class="color" id="vino"></div>
-								<span class="position">Vino</span>
-							</div>
-							<p>¡Esperamos verlos lucir radiantes en otros tonos!</p>
-                    	</div>
-                  </div>                 
-             	</li> <!-- end slide -->
-
-            </ul> <!-- end slides -->
-
-         </div> <!-- end testimonial-slider -->         
-        
-      </div> <!-- end flex-container -->
-
-   </section> <!-- end testimonials -->
-
-
-	<!-- clima y/o hastag
-   ==================================================
-   <section id="clients">
-
-		<div class="row animate-this">
-			<div class="col-twelve">
-
-				<div class="client-lists owl-carousel">
-  					<p>Al subir tus fotografías del evento a redes sociales, te agradeceríamos usar este hashtag.</p>
-					<h3>#BodaAyG</p>
+			<div class="animate-this">
+				<div class="colorcontent">
+					<div class="color" id="blanco"></div>
+					<span class="h05">Blanco</span>
 				</div>
-				
+				<div class="colorcontent">
+					<div class="color" id="beige"></div>
+					<span class="h05">Beige</span>
+				</div>
+				<div class="colorcontent">
+					<div class="color" id="cuarzo"></div>
+					<span class="h05">Cuarzo</span>
+				</div>
 			</div>
-		</div>
 
-   </section> end clients -->
+			<div class="animate-this">
+				<div class="colorcontent">
+					<div class="color" id="chianti"></div>
+					<span class="h05">Chianti</span>
+				</div>
+				<div class="colorcontent">
+					<div class="color" id="vino"></div>
+					<span class="h05">Vino</span>
+				</div>
+			</div>
+
+			<p class="animate-this" style="color: #995051;">¡Esperamos verlos lucir radiantes en otros tonos!</p>
+		</div>
+   </section><!-- end testimonials -->
+
+	<!-- clima y/o hashtag
+   ==================================================  -->
+   <section id="hashtag">
+		<div class="animate-this">
+			<h3>Nos encantaría ver la celebración a través de sus ojos.</h3>
+			<p>Al compartir sus fotos y recuerdos en redes sociales, te invitamos a usar nuestro hashtag:</p>
+			<h1>
+				<a href="https://www.instagram.com/explore/tags/BodaAndyGabo/" target="_blank">#BodaAndyGabo</a>
+			</h1>
+		</div>
+   </section>
 
 
 	<!-- confirmar asistencia
@@ -651,7 +633,7 @@
             <form name="contactForm" id="contactForm" method="post">     			
 
                <div class="form-field">
- 					   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+ 					   <input name="contactName" type="text" id="contactName" placeholder="Nombre" value="" minlength="2" required="">
                </div>
 
                <div class="row">
@@ -662,20 +644,20 @@
 		            </div>
 	            	<div class="col-six tab-full">	            
 	            		<div class="form-field">
-	            			<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+	            			<input name="contactSubject" type="text" id="contactSubject" placeholder="¿Podrás asistir a la boda?" value="">
 	                  </div>		     				   
 		            </div>
                </div>
                                          
                <div class="form-field">
-	              	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+	              	<textarea name="contactMessage" id="contactMessage" placeholder="Mensaje" rows="10" cols="50" required=""></textarea>
 	            </div> 
 
                <div class="form-field">
-                  <button class="submitform">Submit</button>
+                  <button class="submitform">Envíar</button>
 
                   <div id="submit-loader">
-                     <div class="text-loader">Sending...</div>                             
+                     <div class="text-loader">Enviando...</div>                             
        			      <div class="s-loader">
 							  	<div class="bounce1"></div>
 							  	<div class="bounce2"></div>
@@ -691,42 +673,39 @@
 
             <!-- contact-success -->
       		<div id="message-success">
-               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+               <i class="fa fa-check"></i>¡Tu mensaje se ha enviado correctamente, gracias!<br>
       		</div>
 
          </div> <!-- end col-seven --> 
 
-         <!-- <div class="col-four tab-full contact-info end animate-this">
+        <div class="col-four tab-full contact-info end animate-this">
 
-         	<h5>Contact Information</h5>
+         	<h5>Confirmar asistencia por WhatsApp</h5>
 
          	<div class="cinfo">
-	   			<h6>Where to Find Us</h6>
+	   			<h6>Novia</h6>
 	   			<p>
-	            	1600 Amphitheatre Parkway<br>
-	            	Mountain View, CA<br>
-	            	94043 US
+	            	Envíar mensaje
 	            </p>
 	   		</div>
 
 	   		<div class="cinfo">
-	   			<h6>Email Us At</h6>
+	   			<h6>Novio</h6>
 	   			<p>
-	   				someone@infinitysite.com<br>
-				   	info@infinitysite.com			     
+					Envíar mensaje			     
 				   </p>
 	   		</div>
 
-	   		<div class="cinfo">
+	   		<!-- <div class="cinfo">
 	   			<h6>Call Us At</h6>
 	   			<p>
 	   				Phone: (+63) 555 1212<br>
 				   	Mobile: (+63) 555 0100<br>
 				     	Fax: (+63) 555 0101
 				   </p>
-	   		</div>
+	   		</div> -->
 
-         </div> -->
+         </div>
 
    	</div> <!-- end row contact-content -->
 		
@@ -744,7 +723,7 @@
 
 	      		<h4 class="h05">Nube Invitaciones.</h4>
 
-	      		<p>Tienes un evento en puerta? Contactanos, te ayudamos con bodas, XV años, cumpleaños y más.</p>
+	      		<!-- <p>Tienes un evento en puerta? Contactanos, te ayudamos con bodas, XV años, cumpleaños y más.</p>
 
 	      		<div class="subscribe-form">
 	      	
@@ -752,14 +731,14 @@
 
 							<input type="email" value="" name="dEmail" class="email" id="mc-email" placeholder="type email" required=""> 
 	   		
-			   			<!-- <input type="submit" name="subscribe" > -->
+			   			 <input type="submit" name="subscribe" >
 			   			<button><i class="icon-mail"></i></button>
 		   	
 		   				<label for="mc-email" class="subscribe-message"></label>
 			
-						</form>
+					</form>
 
-	      		</div>
+	      		</div> -->
 	      	           	
 	      	</div> <!-- end footer-subscribe -->      	    
 
