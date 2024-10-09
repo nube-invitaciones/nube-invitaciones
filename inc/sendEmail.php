@@ -1,7 +1,7 @@
 ﻿<?php
 
 // Replace this with your own email address
-$siteOwnersEmail = 'user@website.com';
+$siteOwnersEmail = 'dlopezr1313@gmail.com';
 
 
 if($_POST) {
@@ -13,26 +13,29 @@ if($_POST) {
 
    // Check Name
 	if (strlen($name) < 2) {
-		$error['name'] = "Please enter your name.";
+		$error['name'] = "Por favor ingresa tu nombre.";
 	}
 	// Check Email
 	if (!preg_match('/^[a-z0-9&\'\.\-_\+]+@[a-z0-9\-]+\.([a-z0-9\-]+\.)*+[a-z]{2}/is', $email)) {
-		$error['email'] = "Please enter a valid email address.";
+		$error['email'] = "Por favor ingresa un email valido.";
 	}
 	// Check Message
 	if (strlen($contact_message) < 15) {
-		$error['message'] = "Please enter your message. It should have at least 15 characters.";
+		$error['message'] = "Por favor, introduzca su mensaje. Debe tener al menos 15 caracteres.";
 	}
-   // Subject
-	if ($subject == '') { $subject = "Contact Form Submission"; }
+	// Check Message
+	if (strlen($subject) < 1) {
+		$error['message'] = "Por favor, indica si podrás asistir.";
+	}
 
 
    // Set Message
-   $message .= "Email from: " . $name . "<br />";
-	$message .= "Email address: " . $email . "<br />";
-   $message .= "Message: <br />";
+   $message .= "Email de: " . $name . "<br />";
+   $message .= "Email: " . $email . "<br />";
+   $message .= "Asiste a la boda: " . $subject . "<br />";
+   $message .= "Mensage: <br />";
    $message .= $contact_message;
-   $message .= "<br /> ----- <br /> This email was sent from your site's contact form. <br />";
+   $message .= "<br /> ----- <br />Este correo electrónico se envió desde tu invitación dígital. <br />";
 
    // Set From: header
    $from =  $name . " <" . $email . ">";
@@ -49,16 +52,17 @@ if($_POST) {
       ini_set("sendmail_from", $siteOwnersEmail); // for windows server
       $mail = mail($siteOwnersEmail, $subject, $message, $headers);
 
-		if ($mail) { echo "OK"; }
-      else { echo "Something went wrong. Please try again."; }
+		if ($mail) { echo "Email, enviado con éxito."; }
+      else { echo "Algo salió mal. Inténtalo de nuevo."; }
 		
 	} # end if - no validation error
 
 	else {
 
-		$response = (isset($error['name'])) ? $error['name'] . "<br /> \n" : null;
-		$response .= (isset($error['email'])) ? $error['email'] . "<br /> \n" : null;
-		$response .= (isset($error['message'])) ? $error['message'] . "<br />" : null;
+		$response = (isset($error['name'])) ? $error['Nombre'] . "<br /> \n" : null;
+		$response .= (isset($error['email'])) ? $error['Email'] . "<br /> \n" : null;
+		$response .= (isset($error['subject'])) ? $error['Asistencia'] . "<br /> \n" : null;
+		$response .= (isset($error['message'])) ? $error['Mensaje'] . "<br />" : null;
 		
 		echo $response;
 
