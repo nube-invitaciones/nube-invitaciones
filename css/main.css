@@ -2595,6 +2595,13 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 #hashtag a:hover{
   color: #6c3132;
 }
+#hashtag button {
+  background: #995051;
+  color: #ffffff;
+}
+#hashtag button:hover{
+  background: #6c3132;
+}
 /* ------------------------------------------------------------------- 
  * responsive:
  * testimonials
@@ -2881,7 +2888,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   padding: 0 3rem;
   width: 100%;
   background: #9A5051;
-  color: #000000;
+  color: white;
   margin-top: .6rem;
 }
 #contact button.submitform:hover, #contact button.submitform:focus {
