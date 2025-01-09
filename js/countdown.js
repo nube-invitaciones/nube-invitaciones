@@ -1,5 +1,5 @@
 // Fecha objetivo para el contador (puedes ajustar esta fecha)
-var countDownDate = new Date("Dec 07, 2024 15:00:00").getTime();
+var countDownDate = new Date("Dec 07, 2025 15:00:00").getTime();
 
 // Actualiza el contador cada segundo
 var x = setInterval(function() {
